@@ -35,7 +35,6 @@ const getCurrentAppId = () => {
     return null
   }
 
-  setOutput('id', record.id);
   return record.id;
 };
 
