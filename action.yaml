@@ -1,0 +1,23 @@
+name: "KW: CloudFlare - Delete Access Applicaton"
+description: "Removes CloudFlare ZeroTrust Access Applicaton"
+author: "KouraWealth"
+
+inputs:
+  id:
+    description: "Access Applicaton ID"
+  name:
+    description: "Access Applicaton name"
+  account_id:
+    description: "CloudFlare Account ID"
+    required: true
+  token:
+    description: "CloudFlare API token"
+    required: true
+
+runs:
+  using: "node20"
+  main: "main.js"
+
+branding:
+  icon: "globe"
+  color: "green"
